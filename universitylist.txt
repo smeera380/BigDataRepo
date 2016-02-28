@@ -1,0 +1,421 @@
+Harvard University
+University of Oxford
+Columbia University
+University of Cambridge
+Yale University
+Stanford University
+Massachusetts Institute of Technology
+University of California, Berkeley
+Princeton University
+University of Michigan
+University of Chicago
+Cornell University
+University of California, Los Angeles
+University of Pennsylvania
+New York University
+University of Texas at Austin
+University of London
+University of Southern California
+University of Wisconsin–Madison
+University of Virginia
+University of Edinburgh
+University of Illinois at Urbana–Champaign
+University of Toronto
+University College London
+Johns Hopkins University
+University of Minnesota
+London School of Economics
+Ohio State University
+Duke University
+University of Florida
+University of Washington
+Rutgers University
+Brown University
+Northwestern University
+California Institute of Technology
+Humboldt University of Berlin
+United States Military Academy
+University of North Carolina at Chapel Hill
+Dartmouth College
+Georgetown University
+Pennsylvania State University
+Boston University
+McGill University
+University of Glasgow
+University of Maryland, College Park
+Australian National University
+Fachhochschule
+University of Manchester
+University of Notre Dame
+King's College London
+University of Melbourne
+Indiana University
+Heidelberg University
+University of Sydney
+Carnegie Mellon University
+Texas A&M University
+University of Arizona
+Syracuse University
+Leiden University
+George Washington University
+University of St Andrews
+University of Tokyo
+Michigan State University
+University of Göttingen
+University of British Columbia
+University of Massachusetts Amherst
+Imperial College London
+University of Georgia
+University of Iowa
+University of Missouri
+United States Naval Academy
+Moscow State University
+University of Pittsburgh
+University of Vienna
+Purdue University
+Uppsala University
+Arizona State University
+University of Colorado Boulder
+University of Utah
+University of California, Santa Barbara
+Durham University
+University of California, San Diego
+Brigham Young University
+University of Leeds
+University of Oklahoma
+University of Kansas
+Washington University in St. Louis
+College of William & Mary
+University of Birmingham
+University of Oslo
+Georgia Institute of Technology
+Tufts University
+Ludwig Maximilian University of Munich
+Queen's University
+University of Bristol
+Leipzig University
+University of Alabama
+University of New South Wales
+Vanderbilt University
+University of Nottingham
+Charles University in Prague
+Hebrew University of Jerusalem
+University of California, Davis
+Louisiana State University
+University of Copenhagen
+Florida State University
+Fordham University
+Juilliard School
+Indiana University Bloomington
+University of Miami
+University of Kentucky
+American Film Institute
+University of Aberdeen
+Boston College
+Temple University
+ETH Zurich
+Rice University
+University of Alberta
+University of Tennessee
+Iowa State University
+University of Hawaii
+University of Tübingen
+École Polytechnique
+University of Oregon
+Oregon State University
+City College of New York
+University of Bonn
+University of South Carolina
+George Mason University
+University of California, Irvine
+University of Houston
+Emory University
+Saint Petersburg State University
+Jagiellonian University
+École Normale Supérieure
+Northeastern University
+University of Rochester
+University of California, Santa Cruz
+University of Bologna
+North Carolina State University
+Lund University
+University College Dublin
+Tulane University
+York University
+Amherst College
+Sciences Po
+American University
+Queen's University Belfast
+University at Buffalo, The State University of New York
+National Autonomous University of Mexico
+University of Liverpool
+Howard University
+Monash University
+Brandeis University
+University of Connecticut
+University of Queensland
+Peking University
+Martin Luther University of Halle-Wittenberg
+Wesleyan University
+University of Manitoba
+National University of Singapore
+Virginia Tech
+University of Sheffield
+Laval University
+University of Hong Kong
+Ohio University
+Washington State University
+University of Western Ontario
+Williams College
+Case Western Reserve University
+Loughborough University
+University of Waterloo
+University of York
+Sapienza University of Rome
+University of Denver
+Cardiff University
+Oberlin College
+University of Helsinki
+Shanghai Jiao Tong University
+Stony Brook University
+Southern Methodist University
+University of Exeter
+University of Cincinnati
+University of Auckland
+University of Adelaide
+The New School
+Newcastle University
+Tel Aviv University
+Royal College of Art
+The Catholic University of America
+University of Arkansas
+University of Southampton
+University of South Florida
+Swarthmore College
+University of Zurich
+Auburn University
+University of New Mexico
+Université de Montréal
+California State University
+University of Mississippi
+University of Delaware
+University of Strasbourg
+University of Sussex
+Royal College of Music
+University of Jena
+United States Air Force Academy
+University of Warsaw
+University of Tartu
+Institute of technology
+University of Western Australia
+Miami University
+Tsinghua University
+Smith College
+University of Amsterdam
+Vassar College
+University of Ottawa
+Oklahoma State University–Stillwater
+Berklee College of Music
+University of Leicester
+San Diego State University
+Katholieke Universiteit Leuven
+University of Calcutta
+Waseda University
+Wayne State University
+University of Wales
+Baylor University
+Victoria University of Wellington
+University of the Philippines
+University College Cork
+University of Marburg
+Stockholm University
+University of Strathclyde
+Rensselaer Polytechnic Institute
+McMaster University
+West Virginia University
+Kansas State University
+University of Kent
+Utrecht University
+San Jose State University
+Clemson University
+Wellesley College
+San Francisco State University
+Complutense University of Madrid
+University of Otago
+University of Nebraska–Lincoln
+University of Wyoming
+University of Louisville
+Kyoto University
+University of Calgary
+Simon Fraser University
+Lancaster University
+Dalhousie University
+Texas Tech University
+University of Cape Town
+Free University of Berlin
+University of Vermont
+University of Illinois at Chicago
+University of East Anglia
+University of Padua
+Carleton University
+University of Reading
+University of Nebraska system
+Keio University
+Rockefeller University
+Queen Mary, University of London
+University of Hawaiʻi at Mānoa
+Wake Forest University
+Seoul National University
+University of Tehran
+University of Belgrade
+Barnard College
+University of California, San Francisco
+Lehigh University
+Bryn Mawr College
+Villanova University
+University of Geneva
+Saint Louis University
+Goldsmiths, University of London
+Colorado State University
+Pontifical Gregorian University
+University of Basel
+Brooklyn College
+Aberystwyth University
+University of North Texas
+Birkbeck, University of London
+Drexel University
+University of California, Riverside
+Yeshiva University
+Mines ParisTech
+Bowdoin College
+Northern Illinois University
+University of Bath
+Mississippi State University
+University of Dhaka
+University of Saskatchewan
+Chinese University of Hong Kong
+University of São Paulo
+University of Central Florida
+University at Albany, SUNY
+University of Hamburg
+Marquette University
+University of New Hampshire
+Middlebury College
+Binghamton University
+University of Essex
+Vilnius University
+Utah State University
+National and Kapodistrian University of Athens
+Cairo University
+University of Buenos Aires
+Haverford College
+Loyola University Chicago
+University of Wrocław
+Eötvös Loránd University
+RMIT University
+University of Santo Tomas
+Virginia Military Institute
+University of Salamanca
+Mount Holyoke College
+Al-Azhar University
+University of Cologne
+University of Westminster
+DePaul University
+Santa Clara University
+University of Delhi
+National University of Ireland, Galway
+Georgia State University
+University of Maine
+Technion – Israel Institute of Technology
+Florida International University
+University of Greifswald
+University of Dundee
+Royal Holloway, University of London
+École nationale d'administration
+University of Nevada, Las Vegas
+Illinois Institute of Technology
+City University London
+University of Chile
+Berlin Institute of Technology
+Macquarie University
+University of Groningen
+University of Canterbury
+University of Gothenburg
+Virginia Commonwealth University
+National university
+Washington and Lee University
+Technical University Munich
+Colgate University
+Geneva Motor Show
+Weizmann Institute of Science
+École Polytechnique Fédérale de Lausanne
+Union College
+Bard College
+Aarhus University
+Royal Institute of Technology
+University of Pretoria
+Université catholique de Louvain
+University of Coimbra
+DePauw University
+Ryerson University
+Ateneo de Manila University
+Kent State University
+London Business School
+Cooper Union
+University of North Dakota
+University of Wisconsin–Milwaukee
+University of Ulster
+Bowling Green State University
+University of San Francisco
+University of Technology, Sydney
+Concordia University
+University of Guelph
+California Institute of the Arts
+Hofstra University
+University of Victoria
+Eastern Michigan University
+Karolinska Institutet
+Reed College
+University of Rhode Island
+University of Hull
+University of Würzburg
+Bates College
+East Carolina University
+Moscow Conservatory
+Université libre de Bruxelles
+Pomona College
+University of Nevada, Reno
+Nanjing University
+Delft University of Technology
+College of the Holy Cross
+University of the Witwatersrand
+Bar-Ilan University
+University of Erlangen-Nuremberg
+California State University, Northridge
+Texas Christian University
+University of Montana
+La Trobe University
+American University of Beirut
+Gallaudet University
+Karlsruhe Institute of Technology
+California State University, Long Beach
+Fudan University
+California State Polytechnic University, Pomona
+Monterrey Institute of Technology and Higher Education
+Pratt Institute
+Idaho State University
+Tuskegee University
+University of Idaho
+University of Bucharest
+National Taiwan University
+University of Rostock
+University of Pisa
+Seton Hall University
+University of New Brunswick
+University of Memphis
+University of Puerto Rico
+Northern Arizona University
+Memorial University of Newfoundland
+New England Conservatory
+Bangor University
+University of Turin
