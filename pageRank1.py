@@ -75,7 +75,7 @@ if __name__ == "__main__":
     sc = SparkContext(appName="PageRank")
 
     #lines = sc.textFile(sys.argv[1], 5)
-    lines = sc.textFile("s3n://smeeras301/wexdataset.tsv")
+    lines = sc.textFile("s3n://smeeras301/wexdataset")
     #freebase-wex-2010-07-05-articles1.tsv")
     
     # Parsing the WEX Dataset to the format: 'PageId   PageName   Outlinks'	
