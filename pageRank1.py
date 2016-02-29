@@ -10,57 +10,50 @@ from pyspark import SparkContext
 
 
 def parseLine(ln):
-  """ Parses the WEX Dataset line into PageId, PageName and number of outlinks"""
+    """ Parses the WEX Dataset line into PageId, PageName and number of outlinks"""
 
-  xmlline = ln.split('\t')
-  st = xmlline[3].encode('ascii','ignore')
-  #print('################    Initial XML  ################### ',st)  
-  #outFile.write(st +'\n')
+    xmlline = ln.split('\t')
+    st = xmlline[3].encode('ascii','ignore')
+    #print('################    Initial XML  ################### ',st)  
+    #outFile.write(st +'\n')
 
-  outlinks = []
-  try:
+    outlinks = []
+
     st = st.encode("ascii","ignore")
     st = st.replace("\\n","")
-    #print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ', st)
-    root = et.fromstring(st)
-    #print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   Root ',type(root),'#############  ', root)
+    #st = st.replace("\\N","")
+
+    if st == "\\N":
+      outlinks = []
+      return (xmlline[1],outlinks)
+
+    else:
+      try:
+	    root = et.fromstring(st)
+    	    #print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   Root ',type(root),'#############  ', root)
     
-    rootlist = root.findall("./article/paragraph/sentence/bold/link/target")
-    '''
-    rootlist = rootlist + root.findall("./article/paragraph/sentence/link/target")
-    rootlist = rootlist + root.findall("./article/paragraph/template/param/link/target")  
-    rootlist = rootlist + root.findall("./article/paragraph/link/target")
-    rootlist = rootlist + root.findall("./article/paragraph/link/part/link/target")
-    rootlist = rootlist + root.findall("./article/paragraph/extension/preblock/preline/link/target")
-    rootlist = rootlist + root.findall("./article/paragraph/italics/link/target")
-    rootlist = rootlist + root.findall("./article/paragraph/extension/link/target")
-    rootlist = rootlist + root.findall("./article/list/listitem/link/target")
-    '''
-    rootlist = rootlist + root.findall("./article/paragraph/template/params/extension/link/target")
-    rootlist = rootlist + root.findall("./article/list/listitem/bold/link/target")
+            rootlist = root.findall("./article/paragraph/sentence/bold/link/target")
+
+    	    rootlist = rootlist + root.findall("./article/paragraph/template/params/extension/link/target")
+    	    rootlist = rootlist + root.findall("./article/list/listitem/bold/link/target")
     
-    #rootlist = rootlist + root.findall("./article/paragraph/xhtml:center/table/tablerow/tablecell/link/target")
-    #rootlist = rootlist + root.findall("./article/paragraph/xhtml:center/table/tablerow/tablecell/link/part/link/target")
-    '''
-    rootlist = rootlist + root.findall("./article/list/listitem/italics/link/target")
-    rootlist = rootlist + root.findall("./article/list/listitem/template/params/link/target")
-    '''
-
-
-    for i in xrange(0,len(rootlist)):
-      outlinks.append(rootlist[i].text)
-      #print(rootlist[i].text)
+    	    for i in xrange(0,len(rootlist)):
+      		outlinks.append(rootlist[i].text)
+      		#print(rootlist[i].text)
     
-    # Removes the duplicates
-    outlinks = list(set(outlinks))
+    	    # Removes the duplicates
+    	    outlinks = list(set(outlinks))
 
 
-  except:
-     print('Malformed XML') 
-     #outFile.write('Exception' + '\n')
+      except:
+     	    print('Malformed XML') 
+     	    print(st, len(st))
+            #outFile.write('Exception' + '\n')
 
 
-  return (xmlline[1],outlinks)
+      return (xmlline[1],outlinks)
+
+
 
 
 
