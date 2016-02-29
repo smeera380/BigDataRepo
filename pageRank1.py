@@ -55,8 +55,6 @@ def parseLine(ln):
 
 
 
-
-
 def getRank(outlnks,rnk):
     """Calculates the contributions of each Page to the rank of a URL"""
     numoutlnks = len(outlnks)
@@ -66,7 +64,7 @@ def getRank(outlnks,rnk):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         print("Usage: pagerank <file> <iterations>", file=sys.stderr)
         exit(-1)
     #outFile = open('/home/smeera380/spark-1.6.0/outFile','a')
@@ -75,19 +73,17 @@ if __name__ == "__main__":
     sc = SparkContext(appName="PageRank")
 
     #lines = sc.textFile(sys.argv[1], 5)
-    lines = sc.textFile("s3n://smeeras301/wexdataset")
+    lines = sc.textFile(sys.argv[1])
     #freebase-wex-2010-07-05-articles1.tsv")
     
     # Parsing the WEX Dataset to the format: 'PageId   PageName   Outlinks'	
-    links = lines.map(lambda ln:parseLine(ln))
-
-
+    links = lines.map(lambda ln:parseLine(ln)).cache()
 
     # Initializing ranks to 1.0
-    ranks = links.map(lambda lnks : (lnks[0],1.0))
+    ranks = links.map(lambda lnks : (lnks[0],1.0)).cache()
 
     # Computing the PageRank with fixed number of iterations
-    for i in xrange(0,int(sys.argv[1])):
+    for i in xrange(0,int(sys.argv[2])):
       #webpages = links.join(ranks)
       
       pagepoints = links.join(ranks).flatMap(lambda outlnks: getRank(outlnks[1][0],outlnks[1][1]))
@@ -99,7 +95,7 @@ if __name__ == "__main__":
 
     print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Ranks')
     print(type(ranks))
-    ranks.saveAsTextFile("/home/smeera380/spark-1.6.0/PurePageRank")
+    #ranks.saveAsTextFile("/home/smeera380/spark-1.6.0/PurePageRank")
 
     finalRanks= ranks.takeOrdered(100,key=lambda r:-r[1])
     print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Final Ranks')

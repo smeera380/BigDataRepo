@@ -1,5 +1,3 @@
-package com.examples
-
 import scala.xml.{XML, NodeSeq}
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
@@ -52,7 +50,7 @@ object GraphxPageRank {
       System.exit(-1)
     }
 
-    val conf = new SparkConf().setAppName("GraphXPageRank")
+    val conf = new SparkConf().setAppName("GraphXPageRank").set("spark.executor.memory", "1g") 
     val sc = new SparkContext(conf)
 
     //val lines = sc.textFile("/home/smeera380/spark-1.6.0/freebase-wex-2010-07-05-articles1.tsv")
@@ -81,10 +79,10 @@ object GraphxPageRank {
     //edgesRDD.saveAsTextFile("/home/smeera380/spark-1.6.0/PageRankOutput")
 
     // Creating the Graph
-    val graph = Graph(verticesRDD,edgesRDD,"").subgraph(vpred = {(v, d) => d.nonEmpty}).cache
+    val graph = Graph(verticesRDD,edgesRDD,"").subgraph(vpred = {(v, d) => d.nonEmpty}).cache()
  
     //Calculating the Pagerank - Number of iterations used - 8
-    val prg = graph.staticPageRank(args(0).toInt).cache 
+    val prg = graph.staticPageRank(args(0).toInt).cache()
     
     //Linking the Article title with the computed rank
     var finalPgGrph = graph.outerJoinVertices(prg.vertices) {

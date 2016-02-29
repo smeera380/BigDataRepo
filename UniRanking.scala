@@ -1,5 +1,3 @@
-package com.examples
-
 import scala.xml.{XML, NodeSeq}
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
@@ -46,7 +44,7 @@ object UniRanking {
       System.exit(-1)
     }
 
-    val conf = new SparkConf().setAppName("GraphXPageRank")
+    val conf = new SparkConf().setAppName("UniRanking").set("spark.executor.memory", "8g")
     val sc = new SparkContext(conf)
 
     //val lines = sc.textFile("/home/smeera380/spark-1.6.0/freebase-wex-2010-07-05-articles1.tsv")
@@ -54,7 +52,7 @@ object UniRanking {
     println("@@@@@@@@@@@@@@@@@@  Arguments : ")
     //println(args(0) + ":"+ args(1) )
 
-    val wiki = sc.textFile("s3n://smeeras301/wexdataset.tsv")
+    val wiki = sc.textFile("s3n://smeeras301/wexdataset")
     val unilist = sc.textFile(args(0)).collect.toSet
 
     //Parse the WEX dataset to Article name and the Outlinks from the Article
